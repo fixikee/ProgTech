@@ -17,6 +17,7 @@ public class Option extends AppCompatActivity {
     RadioButton rbHard;
     RadioGroup radioGroup;
     Button save;
+    public static boolean used = false;
     public int dif;
 
     @Override
@@ -34,6 +35,7 @@ public class Option extends AppCompatActivity {
     }
 
     public void onSave(View v) {
+        used = true;
         Intent intent = new Intent(Option.this, beadando.game.MainActivity.class);
         if (rbEasy.isChecked()) {
             intent.putExtra("dif", "easy");

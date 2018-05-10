@@ -58,6 +58,9 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:fadingEdge="none|horizontal"
             android:onClick="onSave"
             android:text="@string/save" />
     </RadioGroup>

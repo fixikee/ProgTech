@@ -13,6 +13,7 @@ import java.util.ConcurrentModificationException;
 public class MainActivity extends AppCompatActivity {
 
     Button btnOption;
+    Button btnExit;
     String Difficulty;
 
 
@@ -22,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnOption = findViewById(R.id.btnOption);
-        Difficulty = "easy";
+        btnExit = findViewById(R.id.btnExit);
+
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
     }
 
     public void btnSubmit_OnClick(View v) {
@@ -31,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnStart_OnClick(View v) {
-        Difficulty = getIntent().getStringExtra("dif");
+        if (Option.used)
+            Difficulty = getIntent().getStringExtra("dif");
+        else Difficulty = "easy";
 
         Intent intent = new Intent(MainActivity.this, beadando.game.start.class);
         intent.putExtra("difficulty", Difficulty);
