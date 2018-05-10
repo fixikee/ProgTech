@@ -2,7 +2,6 @@
     <string name="app_name">Game</string>
     <string name="btn_start">Játék</string>
     <string name="btn_option">Beállítások</string>
-    <string name="btn_exit">Kilépés</string>
     <string name="title_activity_option">Options</string>
     <string name="rb_easy">Easy</string>
     <string name="rb_medium">Medium</string>
@@ -10,6 +9,14 @@
     <string name="tv_difficulty">Difficulty</string>
     <string name="tv_content">Get content from radio buttons</string>
     <string name="save">Save</string>
+
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+
+    <string name="popup">Vesztettél</string>
+    <string name="btn_menu">Menü</string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->
