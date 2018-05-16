@@ -17,8 +17,9 @@ public class Option extends AppCompatActivity {
     RadioButton rbHard;
     RadioGroup radioGroup;
     Button save;
+    Button subscribe;
+
     public static boolean used = false;
-    public int dif;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,14 @@ public class Option extends AppCompatActivity {
         rbHard = findViewById(R.id.rbHard);
         radioGroup = findViewById(R.id.radioG);
         save = findViewById(R.id.button);
+        subscribe=findViewById(R.id.btn_Sub);
 
-        dif = 0;
+        subscribe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Option.this,popSub.class));
+            }
+        });
     }
 
     public void onSave(View v) {

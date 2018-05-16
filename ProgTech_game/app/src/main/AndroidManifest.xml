@@ -17,7 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".Option" />
-        <activity android:name=".start"></activity>
+        <activity android:name=".start" />
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".KerdesHozzaad" />
+        <activity
+            android:name=".PopWin"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity
+            android:name=".popSub"
+            android:theme="@style/AppTheme.PopupTheme" />
     </application>
 
 </manifest>
