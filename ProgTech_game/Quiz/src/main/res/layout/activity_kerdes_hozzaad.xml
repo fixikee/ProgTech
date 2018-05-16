@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".KerdesHozzaad">
+
+    <EditText
+        android:id="@+id/tvKerdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center_horizontal"
+        android:hint="@string/tvKerdes"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tvA"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/tvA"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tvB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center_horizontal"
+        android:hint="@string/tvB"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tvC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorPrimaryLight"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/tvC"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tvD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorPrimaryLight"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/tvD"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/correct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinnerDiff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnHozzaad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/btnHozzaad" />
+</LinearLayout>
